@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  fe:
+    container_name: fe
+    image: fe
+    build:
+      context: .
+      args:
+        HOST: "insert-your-host"
+        PORT: 3000
+    ports:
+      - 9004:3000
